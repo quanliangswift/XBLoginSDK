@@ -27,9 +27,11 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/quanliangswift/XBLoginSDK.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}", "XBLoginSDK/**/*.swift"
-  spec.exclude_files = "Classes/Exclude"
+#  spec.source_files  = "Classes", "Classes/**/*.{h,m}", "XBLoginSDK/**/*.swift"
+#  spec.exclude_files = "Classes/Exclude"
       spec.vendored_frameworks = 'XBLoginSDK.framework'
+        spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+      spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
       
     spec.swift_version = '5.0'
     
