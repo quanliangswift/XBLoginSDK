@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XBLoginSDKDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnk-Jm-UQf">
+                                <rect key="frame" x="107" y="74" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U2F-lR-0cZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="iBl-ls-Qgh"/>
+                                </constraints>
+                                <state key="normal" title="Init SDK"/>
+                                <connections>
+                                    <action selector="onclickInit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4M-N7-Jeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELz-oB-FT9">
+                                <rect key="frame" x="107" y="154" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.99194192889999999" green="0.59500390290000005" blue="0.036608017979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Iby-Kj-r7Z"/>
+                                    <constraint firstAttribute="height" constant="50" id="aVD-NO-5LA"/>
+                                </constraints>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="onclickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIA-z9-D45"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6q1-ed-Fg6">
+                                <rect key="frame" x="107" y="254" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.99194192889999999" green="0.59500390290000005" blue="0.036608017979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8Cg-xF-c9B"/>
+                                    <constraint firstAttribute="height" constant="50" id="nss-kd-2dx"/>
+                                </constraints>
+                                <state key="normal" title="logout"/>
+                                <connections>
+                                    <action selector="onclickLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4m-fK-V7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-hm-RqF">
+                                <rect key="frame" x="107" y="354" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.99194192889999999" green="0.59500390290000005" blue="0.036608017979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2LK-gI-8FB"/>
+                                    <constraint firstAttribute="width" constant="200" id="Wgz-ur-mq7"/>
+                                </constraints>
+                                <state key="normal" title="encharge"/>
+                                <connections>
+                                    <action selector="onclickEncharge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jU-8Y-60N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ELz-oB-FT9" firstAttribute="top" secondItem="Rnk-Jm-UQf" secondAttribute="bottom" constant="30" id="BEl-sM-MMh"/>
+                            <constraint firstItem="bGf-hm-RqF" firstAttribute="leading" secondItem="6q1-ed-Fg6" secondAttribute="leading" id="JFm-9A-S3g"/>
+                            <constraint firstItem="Rnk-Jm-UQf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NpG-8B-2qb"/>
+                            <constraint firstItem="ELz-oB-FT9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RdF-2v-qFk"/>
+                            <constraint firstItem="6q1-ed-Fg6" firstAttribute="leading" secondItem="ELz-oB-FT9" secondAttribute="leading" id="ehP-jE-5vX"/>
+                            <constraint firstItem="6q1-ed-Fg6" firstAttribute="top" secondItem="ELz-oB-FT9" secondAttribute="bottom" constant="50" id="eu6-jP-gSD"/>
+                            <constraint firstItem="Rnk-Jm-UQf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="iXA-5b-9g3"/>
+                            <constraint firstItem="bGf-hm-RqF" firstAttribute="trailing" secondItem="6q1-ed-Fg6" secondAttribute="trailing" id="ox7-Cl-ep3"/>
+                            <constraint firstItem="bGf-hm-RqF" firstAttribute="top" secondItem="6q1-ed-Fg6" secondAttribute="bottom" constant="50" id="uoX-ps-qxW"/>
+                            <constraint firstItem="6q1-ed-Fg6" firstAttribute="trailing" secondItem="ELz-oB-FT9" secondAttribute="trailing" id="zTE-Qt-Tmu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

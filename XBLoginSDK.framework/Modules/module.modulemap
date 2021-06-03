@@ -1,0 +1,11 @@
+framework module XBLoginSDK {
+  umbrella header "XBLoginSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module XBLoginSDK.Swift {
+    header "XBLoginSDK-Swift.h"
+    requires objc
+}

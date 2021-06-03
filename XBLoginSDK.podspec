@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "XBLoginSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.1"
   spec.summary      = "A short description of XBLoginSDK."
 
   spec.description  = <<-DESC
@@ -29,7 +29,8 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Classes", "Classes/**/*.{h,m}", "XBLoginSDK/**/*.swift"
   spec.exclude_files = "Classes/Exclude"
-
+      spec.vendored_frameworks = 'XBLoginSDK.framework'
+      
     spec.swift_version = '5.0'
     
     spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'OTHER_LDFLAGS' => '-lObjC' }
@@ -37,5 +38,11 @@ Pod::Spec.new do |spec|
     spec.dependency "SwiftyJSON"
   spec.dependency "ObjectMapper"
   spec.dependency "Alamofire"
+  spec.dependency "CryptoSwift"
+  spec.dependency "SwiftyRSA"
+  spec.dependency "FBSDKLoginKit"
+  spec.dependency "GoogleSignIn"
 
 end
+
+  
