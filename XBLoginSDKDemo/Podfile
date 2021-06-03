@@ -5,15 +5,16 @@ target 'XBLoginSDKDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'ObjectMapper'
-  pod 'SwiftyJSON'
-  pod 'Alamofire'
-  pod 'CryptoSwift'
-  pod 'SwiftyRSA'
+  
   pod 'Kingfisher'
   
-  pod 'FBSDKLoginKit'
-#  pod 'Firebase/Core', '7.10.0'
-  pod 'GoogleSignIn'
+  pod 'XBLoginSDK'
+#  pod 'ObjectMapper'
+#  pod 'SwiftyJSON'
+#  pod 'Alamofire'
+#  pod 'CryptoSwift'
+#  pod 'SwiftyRSA'
+#  pod 'FBSDKLoginKit'
+#  pod 'GoogleSignIn'
   
 end

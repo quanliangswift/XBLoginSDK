@@ -27,19 +27,21 @@ PODS:
   - Kingfisher (6.3.0)
   - ObjectMapper (4.2.0)
   - SwiftyJSON (5.0.1)
-  - SwiftyRSA (1.6.0):
-    - SwiftyRSA/ObjC (= 1.6.0)
-  - SwiftyRSA/ObjC (1.6.0)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+  - XBLoginSDK (1.0.1):
+    - Alamofire
+    - CryptoSwift
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - ObjectMapper
+    - SwiftyJSON
+    - SwiftyRSA
 
 DEPENDENCIES:
-  - Alamofire
-  - CryptoSwift
-  - FBSDKLoginKit
-  - GoogleSignIn
   - Kingfisher
-  - ObjectMapper
-  - SwiftyJSON
-  - SwiftyRSA
+  - XBLoginSDK
 
 SPEC REPOS:
   trunk:
@@ -55,6 +57,7 @@ SPEC REPOS:
     - ObjectMapper
     - SwiftyJSON
     - SwiftyRSA
+    - XBLoginSDK
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
@@ -68,8 +71,9 @@ SPEC CHECKSUMS:
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
-  SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  XBLoginSDK: f40fe913dcc5b18a6a0a68763922df92ac3ba7ea
 
-PODFILE CHECKSUM: 5a9f90387d4acd3fca7ccfbc02115499b5088d43
+PODFILE CHECKSUM: 1a325714e5a0c05104863ab57595a945c2af132c
 
 COCOAPODS: 1.10.1

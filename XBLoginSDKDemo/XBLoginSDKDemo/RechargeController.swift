@@ -160,6 +160,6 @@ extension RechargeController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let product_id = item?.product_id, let price = item?.price else {
             return
         }
-        XBLoginSDKManager.shared.startEncharge(notifyUrl: "http://www.baidu.com", cp_order_no: "\(arc4random()%100000)", product_id: product_id, order_amount: price, product_name: item?.display_name, product_desc: item?.display_info, vip: nil, balance: nil, party: nil, role_id: nil, role_name: nil, server_name: nil, ext_info: nil)
+        XBLoginSDKManager.shared.startEncharge(notifyUrl: "http://www.baidu.com", cp_order_no: "\(arc4random()%100000)", product_id: product_id, order_amount: price, xb_signature: "ssss", product_name: item?.display_name, product_desc: item?.display_info, vip: nil, balance: nil, party: nil, role_id: nil, role_name: nil, server_name: nil, ext_info: nil)
     }
 }
